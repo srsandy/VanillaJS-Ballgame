@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BALLGAME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <img src="images/ball.png" id="blackball">
+    <img src="images/greenball.png" id="greenball">
+    <img src="images/redball.png" id="redball">
+    <img src="images/blueball.png" id="blueball">
+    <div id="model">
+        <div class="model-content">
+            <h1>GAME OVER</h1>
+            <h2>Your Score</h2>
+            <h3 id="final-score">0</h3>
+        </div>
+    </div>
+    <div class="game-screen">
+        <div id="marks">
+            <div>life <span id="life">3</span></div>
+            <div>score: <span id="score">0</span></div>
+        </div>
+        <canvas id="game" width="800px" height="600px"></canvas>
+    </div>
+    <script src="game-functions.js"></script>
+</body>
+
+</html>
