@@ -214,11 +214,15 @@ class Stick {
         c.fillRect(this.x, this.y, this.width, this.height);
         c.stroke();
     }
+
+    update(c) {
+
+    }
 }
 
 class InputHandler {
     constructor(stick) {
-        document.addEventListener('keyup', (event) => {
+        document.addEventListener('keydown', (event) => {
             switch (event.keyCode) {
                 case 38:
                     stick.moveUp();
